@@ -1,3 +1,6 @@
 *
 !public/
+!ingredient-photos/
+!steps-photos/
+!recipe-photos/
 !.gitignore
