@@ -1,0 +1,33 @@
+//
+
+# recipes
+    - title
+    = subtitle
+    - preparation
+    - cooking_time
+    - servings
+    - total_kcal
+    - photo
+
+# steps
+    - recipe_id
+    - title
+    - text
+    - sort_order
+
+# ingredients
+    - name
+
+# ingredient_recipe
+    - ingredient_id
+    - recipe_id
+    - amount
+    - unit (kg, g, l, ml,...)
+
+# utensils
+    - name
+
+# recipe_utensil
+    - recipe_id
+    - utensil_id
+    - amount
