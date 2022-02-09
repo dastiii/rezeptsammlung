@@ -66,6 +66,7 @@ class Recipe extends Resource
                         ->hideWhenUpdating(),
                     Number::make('amount')->onlyOnForms(),
                     Text::make('Unit')->onlyOnForms(),
+                    Text::make('Note'),
                 ];
             })->searchable(),
 

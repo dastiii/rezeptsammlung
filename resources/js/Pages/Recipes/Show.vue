@@ -25,7 +25,12 @@
                                     <li v-for="ingredient in recipe.ingredients" :key="ingredient.id" class="py-4 flex">
                                         <img class="h-10 w-10 rounded-full" :src="ingredient.photo_url" alt="" />
                                         <div class="ml-3">
-                                            <p class="text-sm font-medium text-gray-900">{{ ingredient.name }}</p>
+                                            <p class="text-sm font-medium text-gray-900">
+                                                {{ ingredient.name }}
+                                                <span v-if="ingredient.pivot.note" class="text-gray-500 text-xs">
+                                                   ({{ ingredient.pivot.note }})
+                                                </span>
+                                            </p>
                                             <p class="text-sm text-gray-500">
                                                 {{ `${ingredient.pivot.amount} ${ingredient.pivot.unit}` }}
                                             </p>
